@@ -1,0 +1,36 @@
+# Minimum CMake version required
+cmake_minimum_required(VERSION 3.10)
+
+# Project name
+project(SecretCodingProject)
+
+# Set the C++ standard to C++11 (or later if you prefer)
+set(CMAKE_CXX_STANDARD 11)
+
+# Define where the executable will be created (app directory)
+set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR}/app)
+
+# Include directories for app and code
+include_directories(${CMAKE_SOURCE_DIR}/app)
+include_directories(${CMAKE_SOURCE_DIR}/code)
+
+# Set the user files (if you have extra files like configuration files or custom libraries)
+# If USER_FILES is a variable set by you or CMake, you can just include it as follows:
+set(USER_FILES
+    # Add any other source files here (e.g., other .cpp files you want to compile)
+    # code/SomeOtherFile.cpp
+)
+
+# Add the executable for main.cpp in the app directory
+add_executable(run_app "app/main.cpp" ${USER_FILES})
+
+# Add source files for ModInt, Shamir, etc. if needed
+# For instance, if you want to link code files to the executable, you can add them here:
+target_sources(run_app PRIVATE
+    code/ModInt.cpp
+    code/SSS.cpp
+)
+
+# Optionally, set some compiler flags (e.g., for debugging or optimization)
+# You can remove these lines or modify them as per your needs
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -g")

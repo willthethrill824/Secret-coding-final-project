@@ -1,0 +1,3 @@
+/home/jovyan/CSPB 2270/Secret-coding-final-project/build/CMakeFiles/run_app.dir
+/home/jovyan/CSPB 2270/Secret-coding-final-project/build/CMakeFiles/edit_cache.dir
+/home/jovyan/CSPB 2270/Secret-coding-final-project/build/CMakeFiles/rebuild_cache.dir
