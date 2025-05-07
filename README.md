@@ -120,3 +120,11 @@ make
 The goals of this project were to implement the techniques described to generate a random polynomial following the given secret. Then distribute any amount of shares that are the (x,y) coordinates following this polynomial. The secret can then be reconstructed using Lagrange interpolation of a minimum threshold of shares. 
 
 
+## Resources:
+
+- [Shamir's secret Sharing](https://en.wikipedia.org/wiki/Shamir%27s_secret_sharing)
+- [Euclidean Algorithm](https://www.geeksforgeeks.org/euclidean-algorithms-basic-and-extended/)
+- [Horner's Method](https://en.wikipedia.org/wiki/Horner%27s_method)
+- [Horner's ALgorithm](https://www.geeksforgeeks.org/horners-method-polynomial-evaluation/)
+- [Lagrange's Interpolation Method](https://www.geeksforgeeks.org/lagranges-interpolation/)
+- [Lagrange Interpolation](https://en.wikipedia.org/wiki/Lagrange_polynomial)
